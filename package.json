@@ -1,0 +1,28 @@
+{
+  "name": "futurist",
+  "version": "0.1.0",
+  "description": "like a Promise, but simpler",
+  "main": "futurist",
+  "license": "MIT",
+  "author": "Patrick Mueller <pmuellr@apache.org> (https://github.com/pmuellr)",
+  "scripts": {
+    "standard": "standard",
+    "test": "npm run utest && standard",
+    "utest": "node test/index.js | tap-spec",
+    "watch": "nodemon --exec 'npm test' --ext js,json"
+  },
+  "devDependencies": {
+    "nodemon": "~1.9.1",
+    "standard": "~6.0.7",
+    "tap-spec": "~4.1.1",
+    "tape": "~4.4.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pmuellr/futurist.git"
+  },
+  "bugs": {
+    "url": "https://github.com/pmuellr/futurist/issues"
+  },
+  "homepage": "https://github.com/pmuellr/futurist"
+}
